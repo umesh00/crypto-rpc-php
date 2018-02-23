@@ -1,0 +1,45 @@
+{
+    "name": "cryptoalt/crypto-rpc-php",
+    "homepage": "https://github.com/umesh00/crypto-rpc-php",
+    "type": "library",
+    "description": "PHP Wrapper to work around various crypto rpc APIs",
+    "keywords": ["bitcoin", "bitcoind", "bitcoins"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Umesh"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/umesh00/crypto-rpc-php/issues",
+        "source": "https://github.com/umesh00/crypto-rpc-php"
+    },
+    "autoload": {
+        "psr-4": { "umesh00\\": "src/" }
+    },
+    "autoload-dev": {
+        "psr-4": { "Tests\\umesh00\\": "tests/" }
+    },
+    "extra": {
+        "branch-alias": {
+            "1.x-dev": "1.3.x-dev",
+            "2.x-dev": "2.1.x-dev"
+        }
+    },
+    "require": {
+        "php": ">=5.4",
+        "ext-curl": "*",
+        "ext-json": "*",
+        "psr/log": "~1.0",
+        "psr/http-message": "~1.0"        
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.5.0",
+        "mockery/mockery": "~0.9.0",
+        "fzaninotto/faker": "~1.4.0"
+    },
+    "config": {
+        "bin-dir": "bin"
+    },
+    "non-feature-branches": ["master"]
+}
